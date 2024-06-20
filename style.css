@@ -1,8 +1,12 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Regular.woff)
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy-ExtraBold', 'Gill Sans MT';
+    font-family: 'gilroy';
 }
 html, body{
     height: 100%;
