@@ -94,19 +94,37 @@ html, body{
 #main>#img3{
     transform: translate(-50%, -50%) rotate(-10deg);
 }
-#main #btm-left{
+#btm-left{
     position: absolute;
     bottom: 5%;
     left: 3%;
     font-size: 17px;
     font-weight: 200;
 }
+#main #btm-right{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 17px;
+    font-weight: 200;
+}
+#main #btm{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-start;
+    height: 30px;
+    width: 100%;
+    /* background-color: #ac0f0f; */
+    position: absolute;
+    bottom: 8%;
+}
+                /* Social media icons */
 #main #btm .ri-instagram-line{
     position: absolute;
     bottom: 7%;
     right: 9.5%;
     font-size: 22px;
-    /* background-color: #f5deb3; */
+    background-color: #eeece8;
     border-radius: 20px;
 }
 #main #btm .ri-youtube-line{
@@ -114,17 +132,70 @@ html, body{
     bottom: 7%;
     right: 7.5%;
     font-size: 22px;
+    background-color: #eeece8;
+    border-radius: 20px;
 }
 #main #btm .ri-facebook-line{
     position: absolute;
     bottom: 7%;
-    right: 5.5%;
+    right: 5.7%;
     font-size: 22px;
+    background-color: #eeece8;
+    border-radius: 20px;
 }
-#main #btm #btm-right{
-    position: absolute;
-    bottom: 3%;
-    right: 3%;
-    font-size: 17px;
-    font-weight: 200;
+.ri-instagram-line:hover {
+    opacity: 0.7;
+}
+.ri-youtube-line:hover {
+    opacity: 0.7;
+}
+.ri-facebook-line:hover {
+    opacity: 0.7;
+}
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    #nav {
+        height: 80px;
+        padding: 0 10px;
+    }
+    #nav-part1 h3, #nav-part1 i {
+        font-size: 12px;
+        padding: 3px 6px;
+        font-weight: 700;
+    }
+    #nav-part2 h1 {
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+    }
+    #nav-part3 button {
+        padding: 5px 8px;
+        font-size: 11px;
+        font-weight: 7700;
+    }
+    #main>h1 {
+        font-size: 42px;
+        transform: translate(-50%, -50%);
+    }
+    #main>img {
+        height: 220px;
+        width: 150px;
+        object-fit: cover;
+        background-position: top;
+    }
+    #main>#img1{
+        transform: translate(-50%, -50%) rotate(-25deg);
+    }
+    #main>#img2{
+        transform: translate(-50%, -50%) rotate(-18deg);
+    }
+    #main>#img3{
+        transform: translate(-50%, -50%) rotate(-12deg);
+    }
+    #main #btm-left, #main #btm-right {
+        font-size: 11px;
+    }
+    #main #btm .ri-instagram-line, #main #btm .ri-youtube-line, #main #btm .ri-facebook-line {
+        display: none;
+    }
 }
